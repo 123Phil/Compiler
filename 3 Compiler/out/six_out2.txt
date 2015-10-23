@@ -1,0 +1,41 @@
+Symbol Table:
+     a  300
+     b  301
+Assembly code:
+  1 PUSHI   
+  2 POPM    300
+  3 PUSHI   
+  4 POPM    301
+  5 PUSHM   300
+  6 PUSHV   1
+  7 LESS    
+  8 NOT     
+  9 JMPZ    21
+ 10 PUSHM   301
+ 11 PUSHV   10
+ 12 LESS    
+ 13 JMPZ    16
+ 14 PUSHM   300
+ 15 POPO    
+ 16 PUSHM   300
+ 17 PUSHV   1
+ 18 SUB     
+ 19 POPM    300
+ 20 JUMP    37
+ 21 PUSHM   301
+ 22 PUSHV   20
+ 23 LESS    
+ 24 JMPZ    28
+ 25 PUSHM   300
+ 26 POPO    
+ 27 JUMP    37
+ 28 PUSHM   301
+ 29 PUSHV   50
+ 30 LESS    
+ 31 JMPZ    35
+ 32 PUSHV   10
+ 33 POPM    301
+ 34 JUMP    37
+ 35 PUSHV   5
+ 36 POPM    300
+ 37 NOP     

@@ -1,0 +1,16 @@
+program
+int a, b;
+begin
+  read(a);
+  read(b);
+  while( a >= 1 )
+    begin
+	while(b<10)
+	  begin
+      		write(a+b);
+		b <- b+1;
+	  end
+	a <- a - 1;
+    end
+end.
+
